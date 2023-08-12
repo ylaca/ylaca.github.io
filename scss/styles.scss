@@ -12,31 +12,23 @@ $white: #ffffff;
 $primary-blue: #648cff;
 $accent-blue: #234197;
 
-.burger-container {
-	display: inline-block;
-	cursor: pointer;
-	margin-right: -20px;
-	background-color: #fff;
-	border-left: 1px solid #ebeef0;
-	padding: 25px 24px;
-	position: absolute;
-	right: 24px;
-	top: 0;
-	z-index: 100;
+// Hamburger menu start
+.navbar-toggler {
+	border-color: $accent-blue;
+}
 
+.hamburger-menu {
 	.bar1,
 	.bar2,
 	.bar3 {
 		width: 20px;
 		height: 3px;
-		background-color: #00a5b2;
+		background-color: $accent-blue;
 		margin: 5px 0;
-		transition: .4s
+		transition: .4s;
 	}
 
 	&.change {
-		background-color: #fff;
-
 		.bar1 {
 			transform: rotate(-45deg) translate(-6px, 6px)
 		}
@@ -50,6 +42,7 @@ $accent-blue: #234197;
 		}
 	}
 }
+// Hamburger menu end
 
 .main-nav {
 	color: $white;
@@ -57,6 +50,25 @@ $accent-blue: #234197;
 
 	a {
 		color: $white;
+	}
+
+	.navbar-toggler {
+		outline: none;
+	}
+
+	.navbar-nav {
+		padding: 0 16px 8px;
+	}
+
+	@media (max-width: 992px) {
+		.main-menu {
+			position: absolute;
+			top: 56px;
+			left: 0;
+			z-index: 100;
+			background-color: $primary-blue;
+			width: 100%;
+		}
 	}
 }
 
