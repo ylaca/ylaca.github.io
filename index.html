@@ -1,30 +1,81 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<title>ILA space</title>
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<!-- Custom Hamburgers -->
 	<!-- Custom style -->
 	<link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-	<nav>
-		<ul>
-			<li>Link 1</li>
-			<li>Link 2</li>
-			<li>Link 3</li>
-		</ul>
+	<nav class="navbar navbar-expand-md main-nav">
+		<a class="navbar-brand" href="#">My App</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<div class="burger-container">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Features</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Pricing</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4"></div>
-				<div class="col-md-4"><h1>Hello World</h1></div>
-				<div class="col-md-4"></div>
+
+	<!-- <header>
+		
+	</header> -->
+	<section class="assets-wrapper">
+		<div class="text-center container">
+			<h1 class="assets-title"><span class="assets-perfect">Perfect</span> <span class="assets-features">Features</span>
+			</h1>
+			<small>Only necessary</small>
+			<div class="row assets-row" style="display: none;">
+				<div class="col-sm-4">
+					<div class="assets-col">
+						<img class="assets-img" src="img/icon-1.png" alt="Icon-1">
+						<div class="assets-text">
+							<h1 class="assets-title">Usability</h1>
+							<p class="assets-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cupiditate.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="assets-col">
+						<img class="assets-img" src="img/icon-2.png" alt="Icon-2">
+						<div class="assets-text">
+							<h1 class="assets-title">Parallax Effect</h1>
+							<p class="assets-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cupiditate.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="assets-col">
+						<img class="assets-img" src="img/icon-3.png" alt="Icon-3">
+						<div class="assets-text">
+							<h1 class="assets-title">Unlimited Colors</h1>
+							<p class="assets-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cupiditate.</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+
 	</section>
 
 	<!-- Scripts Used -->
@@ -32,5 +83,7 @@
 	<script src="./js/jquery-3.2.1.slim.min.js"></script>
 	<script src="./js/popper.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/main.js"></script>
 </body>
+
 </html>
