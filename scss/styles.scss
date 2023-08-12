@@ -18,6 +18,7 @@ $accent-blue: #234197;
 }
 
 .hamburger-menu {
+
 	.bar1,
 	.bar2,
 	.bar3 {
@@ -42,6 +43,7 @@ $accent-blue: #234197;
 		}
 	}
 }
+
 // Hamburger menu end
 
 .main-nav {
@@ -58,9 +60,24 @@ $accent-blue: #234197;
 
 	.navbar-nav {
 		padding: 0 16px 8px;
+
+		.nav-link {
+			color: $white;
+			padding: 0 16px;
+
+			&:hover,
+			&:active {
+				color: $accent-blue;
+				-webkit-transition: all .33s ease;
+				-moz-transition: all .33s ease;
+				-o-transition: all .33s ease;
+				-ms-transition: all .33s ease;
+				transition: all .33s ease;
+			}
+		}
 	}
 
-	@media (max-width: 992px) {
+	@media (max-width: 768px) {
 		.main-menu {
 			position: absolute;
 			top: 56px;

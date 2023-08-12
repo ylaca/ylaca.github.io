@@ -36,7 +36,17 @@
     outline: none; }
   .main-nav .navbar-nav {
     padding: 0 16px 8px; }
-  @media (max-width: 992px) {
+    .main-nav .navbar-nav .nav-link {
+      color: #ffffff;
+      padding: 0 16px; }
+      .main-nav .navbar-nav .nav-link:hover, .main-nav .navbar-nav .nav-link:active {
+        color: #234197;
+        -webkit-transition: all .33s ease;
+        -moz-transition: all .33s ease;
+        -o-transition: all .33s ease;
+        -ms-transition: all .33s ease;
+        transition: all .33s ease; }
+  @media (max-width: 768px) {
     .main-nav .main-menu {
       position: absolute;
       top: 56px;
