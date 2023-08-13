@@ -7,43 +7,72 @@
 	<title>ILA space</title>
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<!-- Bootstrap Font Icon CSS -->
+	<link rel="stylesheet" href="./css/bootstrap-icons.css">
 	<!-- Custom style -->
 	<link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md main-nav">
+	<nav class="navbar navbar-expand-lg fixed-top app-nav">
 		<div class="container">
 			<a class="navbar-brand" href="#">My App</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<!-- <span class="navbar-toggler-icon"></span> -->
 				<div class="hamburger-menu">
 					<div class="bar1"></div>
 					<div class="bar2"></div>
 					<div class="bar3"></div>
 				</div>
 			</button>
-			<div class="collapse navbar-collapse main-menu" id="navbarText">
-				<ul class="navbar-nav ml-auto mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Reviews</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Download</a>
-					</li>
-				</ul>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="container">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Reviews</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Download</a>
+						</li>
+						<!-- Dropdown Example -->
+						<!-- <li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Dropdown
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li> -->
+					</ul>
+					<div class="social-media-header">
+						<a href="https://www.facebook.com/fh5co"><i class="bi bi-facebook"></i></a>
+						<a href="https://freehtml5.co"><i class="bi bi-instagram"></i></a>
+						<a href="https://www.twitter.com/fh5co"><i class="bi bi-twitter"></i></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</nav>
 
-	<!-- <header>
-		
-	</header> -->
+	<header class="app-header">
+		<div class="container">
+			<h1>A Free Drupal 8 Theme Built with Bootstrap 5, which has wider containers</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptates, aliquid soluta distinctio dolorum tenetur. </p>
+			<button type="button" class="btn btn-primary">Primary</button>
+			<button type="button" class="btn btn-secondary">Secondary</button>
+			<img class="header-img" data-wow-delay="1s" src="img/phone-image.png" alt="Smartphone">
+		</div>
+	</header>
+
 	<section class="assets-wrapper">
 		<div class="text-center container">
 			<h1 class="assets-title"><span class="assets-perfect">Perfect</span> <span class="assets-features">Features</span>
@@ -85,9 +114,9 @@
 	<!-- Scripts Used -->
 	<!-- Bootstrap -->
 	<script src="./js/jquery-3.2.1.slim.min.js"></script>
+	<!-- <script src="./js/popper.min.js"></script> -->
+	<!-- <script src="./js/bootstrap.min.js"></script> -->
 	<script src="./js/bootstrap.bundle.min.js"></script>
-	<script src="./js/popper.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/main.js"></script>
 </body>
 

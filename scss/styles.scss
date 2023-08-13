@@ -8,17 +8,21 @@
 	box-sizing: border-box;
 }
 
+body {
+	padding-top: 83px;
+}
+
 $white: #ffffff;
+$white-alabaster: #f7f7f7;
 $primary-blue: #648cff;
 $accent-blue: #234197;
 
 // Hamburger menu start
-.navbar-toggler {
-	border-color: $accent-blue;
-}
+// .navbar-toggler {
+// 	border-color: $accent-blue;
+// }
 
 .hamburger-menu {
-
 	.bar1,
 	.bar2,
 	.bar3 {
@@ -45,59 +49,276 @@ $accent-blue: #234197;
 }
 
 // Hamburger menu end
-
-.main-nav {
-	color: $white;
+.app-nav {
 	background-color: $primary-blue;
+	border-bottom: 2px solid $white-alabaster;
 
+	// Links
 	a {
 		color: $white;
+
+		&.navbar-brand {
+			font-size: 38px;
+			font-weight: 500;
+		}
+
+		&.nav-link {
+			margin: 0 32px;
+		}
+
+		&:hover,
+		&:focus {
+			color: $accent-blue;
+		}
+
+		// &:active {
+		// 	color: $white;
+		// 	border-bottom: 2px solid $white;
+		// 	border-radius: 10px;
+		// }
 	}
 
+	// Hamburger menu container
 	.navbar-toggler {
-		outline: none;
+		border-color: $accent-blue;
+
+		&:focus {
+			box-shadow: none;
+		}
 	}
 
-	.navbar-nav {
-		padding: 0 16px 8px;
+	.navbar-collapse {
+		.container {
+			display: flex;
+			align-items: center;
+			flex-direction: row;
 
-		.nav-link {
-			color: $white;
-			padding: 8px;
+			// Main menu section
+			.navbar-nav {
+				width: 100%;
+				justify-content: center;
+			}
+		}
 
-			&:hover,
-			&:active {
+		
+	}
+
+	.social-media-header {
+		min-width: 160px;
+
+		.bi {
+			font-size: 20px;
+			padding: 15px;
+		}
+	}
+
+	@media (max-width: 992px) {
+		a {
+			&.nav-link {
+				margin: 0;
+			}
+		}
+
+		.navbar-collapse {
+			position: absolute;
+			top: 83px;
+			width: 100%;
+			left: 0px;
+			background-color: $primary-blue;
+			padding-bottom: 16px;
+			border-bottom: 2px solid $white-alabaster;
+			border-radius: 0 0 50% 50% / 4%;
+
+			.container {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+		}
+	}
+}
+
+// --- Header section ------------------------------------------------------------------------
+.app-header {
+	height: 700px;
+	width: 100%;
+	background: url("../img/banner-bg.jpg") no-repeat center;
+	border-radius: 0 0 50% 50% / 4%;
+	color: $white;
+	margin-bottom: 55px;
+
+	.container {
+		top: 110px;
+		position: relative;
+
+		h1 {
+			font-size: 55px;
+			font-weight: 300;
+		}
+
+		p {
+			width: 70%;
+			font-size: 14px;
+			line-height: 32px;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		.btn {
+			border: none;
+			padding: 10px 15px;
+
+			&-primary {
+				background-color: $white-alabaster;
 				color: $accent-blue;
-				-webkit-transition: all .33s ease;
-				-moz-transition: all .33s ease;
-				-o-transition: all .33s ease;
-				-ms-transition: all .33s ease;
-				transition: all .33s ease;
+				font-weight: 500;
+	
+				&:hover {
+					background-color: $accent-blue;
+					color: $white-alabaster;
+				}
+			}
+	
+			&-secondary {
+				background-color: $accent-blue;
+				color: $white-alabaster;
+				margin-left: 10px;
+	
+				&:hover {
+					background-color: $white-alabaster;
+					color: $accent-blue;
+				}
+			}
+		}
+
+		.header-img {
+			position: absolute;
+			right: 0px;
+			top: auto;
+			height: 650px;
+			bottom: -510px;
+		}
+	}
+
+	@media (max-width: 1400px) {
+		.container {
+			.header-img {
+				height: 550px;
+				bottom: -386px;
+			}
+		}
+	}
+
+	@media (max-width: 992px) {
+		margin-bottom: 130px;
+
+		.container {
+			top: 80px;
+
+			h1 {
+				font-size: 35px;
+			}
+
+			.header-img {
+				height: 450px;
+				bottom: -466px;
+				left: 0;
+				right: 0;
+				margin-left: auto;
+				margin-right: auto;
 			}
 		}
 	}
 
 	@media (max-width: 768px) {
-		.main-menu {
-			position: absolute;
-			top: 56px;
-			left: 0;
-			z-index: 100;
-			background-color: $primary-blue;
-			width: 100%;
+		margin-bottom: 200px;
 
-			.navbar-nav {
-				padding: 0;
+		.container {
+			.header-img {
+				bottom: -466px;
 			}
 		}
 	}
-	
-	@media (min-width: 768px) {
-		.navbar-nav {
-			padding: 0;
+
+	@media (max-width: 576px) {
+		margin-bottom: 120px;
+
+		.container {
+			top: 60px;
+			text-align: center;
+
+			h1 {
+				font-size: 30px;
+			}
+
+			p {
+				width: 100%;
+				line-height: 24px;
+			}
+
+			.header-img {
+				height: 450px;
+				bottom: -466px;
+			}
 		}
 	}
+
+	// @media (max-width: 477px) {
+	// 	margin-bottom: 175px;
+	// }
 }
+
+// .main-nav {
+// 	color: $white;
+// 	background-color: $primary-blue;
+
+// 	a {
+// 		color: $white;
+// 	}
+
+// 	.navbar-toggler {
+// 		outline: none;
+// 	}
+
+// 	.navbar-nav {
+// 		padding: 0 16px 8px;
+
+// 		.nav-link {
+// 			color: $white;
+// 			padding: 8px;
+
+// 			&:hover,
+// 			&:active {
+// 				color: $accent-blue;
+// 				-webkit-transition: all .33s ease;
+// 				-moz-transition: all .33s ease;
+// 				-o-transition: all .33s ease;
+// 				-ms-transition: all .33s ease;
+// 				transition: all .33s ease;
+// 			}
+// 		}
+// 	}
+
+// 	@media (max-width: 768px) {
+// 		.main-menu {
+// 			position: absolute;
+// 			top: 56px;
+// 			left: 0;
+// 			z-index: 100;
+// 			background-color: $primary-blue;
+// 			width: 100%;
+
+// 			.navbar-nav {
+// 				padding: 0;
+// 			}
+// 		}
+// 	}
+	
+// 	@media (max-width: 768px) {
+// 		.navbar-nav {
+// 			padding: 0;
+// 		}
+// 	}
+// }
 
 /* --- Assets/Advantages Section ------------------------------ */
 .assets-wrapper {
@@ -116,6 +337,12 @@ $accent-blue: #234197;
 
 		.assets-features {
 			font-size: 42px;
+		}
+	}
+
+	@media (max-width: 430px) {
+		.assets-title {
+			margin-top: 80px;
 		}
 	}
 

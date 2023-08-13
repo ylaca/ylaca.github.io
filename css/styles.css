@@ -6,8 +6,8 @@
   font-family: "Montserrat", "sans-serif";
   box-sizing: border-box; }
 
-.navbar-toggler {
-  border-color: #234197; }
+body {
+  padding-top: 83px; }
 
 .hamburger-menu .bar1,
 .hamburger-menu .bar2,
@@ -27,38 +27,129 @@
 .hamburger-menu.change .bar3 {
   transform: rotate(45deg) translate(-5px, -5px); }
 
-.main-nav {
-  color: #ffffff;
-  background-color: #648cff; }
-  .main-nav a {
+.app-nav {
+  background-color: #648cff;
+  border-bottom: 2px solid #f7f7f7; }
+  .app-nav a {
     color: #ffffff; }
-  .main-nav .navbar-toggler {
-    outline: none; }
-  .main-nav .navbar-nav {
-    padding: 0 16px 8px; }
-    .main-nav .navbar-nav .nav-link {
-      color: #ffffff;
-      padding: 8px; }
-      .main-nav .navbar-nav .nav-link:hover, .main-nav .navbar-nav .nav-link:active {
-        color: #234197;
-        -webkit-transition: all .33s ease;
-        -moz-transition: all .33s ease;
-        -o-transition: all .33s ease;
-        -ms-transition: all .33s ease;
-        transition: all .33s ease; }
-  @media (max-width: 768px) {
-    .main-nav .main-menu {
+    .app-nav a.navbar-brand {
+      font-size: 38px;
+      font-weight: 500; }
+    .app-nav a.nav-link {
+      margin: 0 32px; }
+    .app-nav a:hover, .app-nav a:focus {
+      color: #234197; }
+  .app-nav .navbar-toggler {
+    border-color: #234197; }
+    .app-nav .navbar-toggler:focus {
+      box-shadow: none; }
+  .app-nav .navbar-collapse .container {
+    display: flex;
+    align-items: center;
+    flex-direction: row; }
+    .app-nav .navbar-collapse .container .navbar-nav {
+      width: 100%;
+      justify-content: center; }
+  .app-nav .social-media-header {
+    min-width: 160px; }
+    .app-nav .social-media-header .bi {
+      font-size: 20px;
+      padding: 15px; }
+  @media (max-width: 992px) {
+    .app-nav a.nav-link {
+      margin: 0; }
+    .app-nav .navbar-collapse {
       position: absolute;
-      top: 56px;
-      left: 0;
-      z-index: 100;
+      top: 83px;
+      width: 100%;
+      left: 0px;
       background-color: #648cff;
-      width: 100%; }
-      .main-nav .main-menu .navbar-nav {
-        padding: 0; } }
-  @media (min-width: 768px) {
-    .main-nav .navbar-nav {
-      padding: 0; } }
+      padding-bottom: 16px;
+      border-bottom: 2px solid #f7f7f7;
+      border-radius: 0 0 50% 50% / 4%; }
+      .app-nav .navbar-collapse .container {
+        flex-direction: column;
+        align-items: flex-start; } }
+
+.app-header {
+  height: 700px;
+  width: 100%;
+  background: url("../img/banner-bg.jpg") no-repeat center;
+  border-radius: 0 0 50% 50% / 4%;
+  color: #ffffff;
+  margin-bottom: 55px; }
+  .app-header .container {
+    top: 110px;
+    position: relative; }
+    .app-header .container h1 {
+      font-size: 55px;
+      font-weight: 300; }
+    .app-header .container p {
+      width: 70%;
+      font-size: 14px;
+      line-height: 32px;
+      margin-top: 30px;
+      margin-bottom: 30px; }
+    .app-header .container .btn {
+      border: none;
+      padding: 10px 15px; }
+      .app-header .container .btn-primary {
+        background-color: #f7f7f7;
+        color: #234197;
+        font-weight: 500; }
+        .app-header .container .btn-primary:hover {
+          background-color: #234197;
+          color: #f7f7f7; }
+      .app-header .container .btn-secondary {
+        background-color: #234197;
+        color: #f7f7f7;
+        margin-left: 10px; }
+        .app-header .container .btn-secondary:hover {
+          background-color: #f7f7f7;
+          color: #234197; }
+    .app-header .container .header-img {
+      position: absolute;
+      right: 0px;
+      top: auto;
+      height: 650px;
+      bottom: -510px; }
+  @media (max-width: 1400px) {
+    .app-header .container .header-img {
+      height: 550px;
+      bottom: -386px; } }
+  @media (max-width: 992px) {
+    .app-header {
+      margin-bottom: 130px; }
+      .app-header .container {
+        top: 80px; }
+        .app-header .container h1 {
+          font-size: 35px; }
+        .app-header .container .header-img {
+          height: 450px;
+          bottom: -466px;
+          left: 0;
+          right: 0;
+          margin-left: auto;
+          margin-right: auto; } }
+  @media (max-width: 768px) {
+    .app-header {
+      margin-bottom: 200px; }
+      .app-header .container .header-img {
+        bottom: -466px; } }
+  @media (max-width: 576px) {
+    .app-header {
+      margin-bottom: 120px; }
+      .app-header .container {
+        top: 60px;
+        text-align: center; }
+        .app-header .container h1 {
+          font-size: 30px; }
+        .app-header .container p {
+          width: 100%;
+          line-height: 24px; }
+        .app-header .container .header-img {
+          height: 450px;
+          bottom: -466px; } }
 
 /* --- Assets/Advantages Section ------------------------------ */
 .assets-wrapper {
@@ -73,3 +164,6 @@
       color: #648cff; }
     .assets-wrapper .assets-title .assets-features {
       font-size: 42px; }
+  @media (max-width: 430px) {
+    .assets-wrapper .assets-title {
+      margin-top: 80px; } }
