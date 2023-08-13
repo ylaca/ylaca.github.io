@@ -63,7 +63,7 @@ $accent-blue: #234197;
 
 		.nav-link {
 			color: $white;
-			padding: 0 16px;
+			padding: 8px;
 
 			&:hover,
 			&:active {
@@ -85,6 +85,16 @@ $accent-blue: #234197;
 			z-index: 100;
 			background-color: $primary-blue;
 			width: 100%;
+
+			.navbar-nav {
+				padding: 0;
+			}
+		}
+	}
+	
+	@media (min-width: 768px) {
+		.navbar-nav {
+			padding: 0;
 		}
 	}
 }
