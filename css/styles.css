@@ -8,6 +8,11 @@
 
 body {
   padding-top: 83px; }
+  body section {
+    margin-bottom: 32px; }
+    @media (min-width: 576px) {
+      body section {
+        margin-bottom: 64px; } }
 
 .hamburger-menu .bar1,
 .hamburger-menu .bar2,

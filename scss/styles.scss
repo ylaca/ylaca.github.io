@@ -10,6 +10,14 @@
 
 body {
 	padding-top: 83px;
+
+	section {
+		margin-bottom: 32px;
+
+		@media (min-width: 576px) {
+			margin-bottom: 64px;
+		}
+	}
 }
 
 $white: #ffffff;
