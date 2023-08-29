@@ -150,20 +150,51 @@ body {
         .app-header .container .header-img {
           height: 450px;
           bottom: -466px; } }
+  @media (max-width: 420px) {
+    .app-header {
+      margin-bottom: 200px; } }
 
 /* --- Assets/Advantages Section ------------------------------ */
 .assets-wrapper {
   width: 100%;
   height: auto;
   overflow: hidden; }
-  .assets-wrapper .assets-title {
-    text-transform: uppercase; }
-    .assets-wrapper .assets-title .assets-perfect {
-      font-size: 27px;
-      letter-spacing: 1px;
-      color: #648cff; }
-    .assets-wrapper .assets-title .assets-features {
-      font-size: 42px; }
-  @media (max-width: 430px) {
-    .assets-wrapper .assets-title {
-      margin-top: 80px; } }
+  .assets-wrapper .assets-wrapper-title {
+    margin-bottom: 40px; }
+    .assets-wrapper .assets-wrapper-title h1 {
+      text-transform: uppercase;
+      margin-bottom: 16px; }
+      .assets-wrapper .assets-wrapper-title h1 .assets-perfect {
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #648cff;
+        margin-bottom: 16px;
+        display: block; }
+      .assets-wrapper .assets-wrapper-title h1 .assets-features {
+        font-size: 24px; }
+  @media (min-width: 576px) {
+    .assets-wrapper .assets-wrapper-title h1 {
+      margin-bottom: 8px; }
+      .assets-wrapper .assets-wrapper-title h1 .assets-perfect {
+        font-size: 27px;
+        display: inline; }
+      .assets-wrapper .assets-wrapper-title h1 .assets-features {
+        font-size: 42px; } }
+  @media (min-width: 768px) {
+    .assets-wrapper .assets-wrapper-title {
+      margin-bottom: 64px; } }
+  @media (min-width: 1400px) {
+    .assets-wrapper .assets-wrapper-title {
+      margin-bottom: 96px; } }
+  .assets-wrapper .assets-row .assets-col {
+    margin-bottom: 32px; }
+    .assets-wrapper .assets-row .assets-col .assets-img {
+      width: 60px;
+      margin: 0 auto 16px; }
+    .assets-wrapper .assets-row .assets-col .assets-title {
+      font-size: 20px;
+      font-weight: 600; }
+    .assets-wrapper .assets-row .assets-col .assets-desc {
+      font-size: 14px;
+      line-height: 20px;
+      color: #c7c7c7; }
