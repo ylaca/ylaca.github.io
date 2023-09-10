@@ -203,3 +203,130 @@ body {
       font-size: 14px;
       line-height: 20px;
       color: #c7c7c7; }
+
+/* --- Slider Section ------------------------------ */
+.slider-section h1 {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  color: #648cff; }
+
+.slider-section small {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400; }
+
+.slider-section .slider-wrapper {
+  margin: 50px 0; }
+  .slider-section .slider-wrapper .app-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .slider-section .slider-wrapper .app-slide .slider-img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: contain; }
+
+@media (min-width: 768px) {
+  .slider-section .slider-wrapper .app-slide .slider-img {
+    max-height: 400px; } }
+
+/* --- Features Section ------------------------------ ------------------------------ */
+.app-features {
+  background: url("../img/curved-bg.jpg") no-repeat;
+  background-position: 0px 0px;
+  background-size: contain;
+  padding-top: 100px; }
+  .app-features .features-row {
+    margin-bottom: 48px; }
+  .app-features .features-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .app-features .features-col .features-img-wrapper {
+      position: relative; }
+      .app-features .features-col .features-img-wrapper img {
+        max-height: 550px;
+        margin-bottom: 32px; }
+      .app-features .features-col .features-img-wrapper .new-feature {
+        color: #ffffff;
+        background: #fcec64;
+        padding: 18px;
+        width: 35px;
+        display: inline-block;
+        line-height: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 14px;
+        box-sizing: initial;
+        position: absolute;
+        font-weight: 700;
+        right: -35px;
+        top: 140px; }
+      .app-features .features-col .features-img-wrapper .main-feature {
+        color: white;
+        background: #648cff;
+        padding: 18px;
+        width: 35px;
+        display: inline-block;
+        line-height: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 14px;
+        box-sizing: initial;
+        position: absolute;
+        left: -35px;
+        bottom: 130px;
+        font-weight: 700; }
+    .app-features .features-col h1 {
+      color: #648cff;
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 600;
+      margin-bottom: 20px; }
+    .app-features .features-col p {
+      color: #111111;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 28px;
+      text-align: center; }
+    .app-features .features-col .features-sm .sm-circle {
+      padding-right: 16px; }
+      .app-features .features-col .features-sm .sm-circle:last-of-type {
+        padding-right: 0; }
+      .app-features .features-col .features-sm .sm-circle i {
+        color: #c3cfe5;
+        border: 1px solid #ededed;
+        background: #fff;
+        padding: 10px;
+        width: 35px;
+        display: inline-block;
+        line-height: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 14px;
+        box-sizing: initial;
+        font-weight: 600;
+        box-shadow: 0 0 0 5px #f9f9f9; }
+  @media (min-width: 768px) {
+    .app-features {
+      background-position: 0px -70px; }
+      .app-features .features-col--text {
+        align-items: flex-start; }
+      .app-features .features-col .features-img-wrapper img {
+        margin-bottom: 0; }
+      .app-features .features-col p {
+        text-align: left; } }
+  @media (min-width: 1400px) {
+    .app-features {
+      background-position: 0px -140px; } }
+
+/* --- Reviews Section ------------------------------ ------------------------------ */
