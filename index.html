@@ -1,13 +1,272 @@
+<!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<title>ILA space</title>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<!-- Bootstrap Font Icon CSS -->
+	<link rel="stylesheet" href="./css/bootstrap-icons.css">
+	<!-- Slider/Carousel -->
+	<link rel="stylesheet" href="./css/slick/slick.css">
+	<link rel="stylesheet" href="./css/slick/slick-theme.css">
+	<!-- Custom style -->
 	<link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-	<div>
-		<h1>Hello World</h1>
-	</div>
+	<nav class="navbar navbar-expand-lg fixed-top app-nav">
+		<div class="container">
+			<a class="navbar-brand" href="#">My App</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger-menu">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="container">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Reviews</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Download</a>
+						</li>
+					</ul>
+					<div class="social-media-header">
+						<a href="https://www.facebook.com/fh5co"><i class="bi bi-facebook"></i></a>
+						<a href="https://freehtml5.co"><i class="bi bi-instagram"></i></a>
+						<a href="https://www.twitter.com/fh5co"><i class="bi bi-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<header class="app-header">
+		<div class="container">
+			<h1>A Free Drupal 8 Theme Built with Bootstrap 5, which has wider containers</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et voluptates, aliquid soluta distinctio dolorum tenetur. </p>
+			<button type="button" class="btn btn-primary">Primary</button>
+			<button type="button" class="btn btn-secondary">Secondary</button>
+			<img class="header-img" data-wow-delay="1s" src="img/phone-image.png" alt="Smartphone">
+		</div>
+	</header>
+
+	<section class="assets-wrapper">
+		<div class="text-center container">
+			<div class="assets-wrapper-title">
+				<h1><span class="assets-perfect">Perfect</span> <span class="assets-features">Features</span>
+				</h1>
+				<small>Only necessary</small>
+			</div>
+			<div class="row assets-row">
+				<div class="col-md-4">
+					<div class="assets-col">
+						<img class="assets-img" src="img/icon-1.png" alt="Icon-1">
+						<div class="assets-text">
+							<h1 class="assets-title">Usability</h1>
+							<p class="assets-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cupiditate.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="assets-col">
+						<img class="assets-img" src="img/icon-2.png" alt="Icon-2">
+						<div class="assets-text">
+							<h1 class="assets-title">Parallax Effect</h1>
+							<p class="assets-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cupiditate.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="assets-col">
+						<img class="assets-img" src="img/icon-3.png" alt="Icon-3">
+						<div class="assets-text">
+							<h1 class="assets-title">Unlimited Colors</h1>
+							<p class="assets-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cupiditate.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="slider-section">
+		<div class="container">
+			<h1>SIMPLE WIDGETS</h1>
+			<small>Drag and Drop</small>
+			<div class="slider-wrapper">
+				<div class="app-slider">
+					<div class="app-slide"><img class="slider-img" src="img/smartphone-2.png" alt=""></div>
+					<div class="app-slide"><img class="slider-img" src="img/smartphone-2.png" alt=""></div>
+					<div class="app-slide"><img class="slider-img" src="img/iphone.png" alt=""></div>
+					<div class="app-slide"><img class="slider-img" src="img/smartphone-2.png" alt=""></div>
+					<div class="app-slide"><img class="slider-img" src="img/smartphone-2.png" alt=""></div>
+					<div class="app-slide"><img class="slider-img" src="img/iphone.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="app-features">
+		<div class="container">
+			<div class="row features-row">
+				<div class="col-md-6 features-col">
+					<div class="features-img-wrapper">
+						<img src="img/smartphone-1.png" alt="">
+						<span class="new-feature">New</span>
+						<span class="main-feature">Free</span>
+					</div>
+				</div>
+				<div class="col-md-6 features-col features-col--text">
+					<h1>New Features</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolor iste beatae ad adipisci, 
+						fugiat dignissimos pariatur, dolore nemo suscipit cum nisi earum voluptates nulla! 
+					</p>
+					<div class="features-sm">
+						<span class="sm-circle">
+							<a href="#"><i class="bi bi-facebook"></i></a>
+						</span>
+						<span class="sm-circle">
+							<a href="#"><i class="bi bi-instagram"></i></a>
+						</span>
+						<span class="sm-circle">
+							<a href="#"><i class="bi bi-twitter"></i></a>
+						</span>
+						<span class="sm-circle">
+							<a href="#"><i class="bi bi-emoji-sunglasses"></i></a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row features-row">
+				<div class="col-md-6 order-md-2 features-col">
+					<div class="features-img-wrapper">
+						<img src="img/smartphone-1.png" alt="">
+						<span class="new-feature">New</span>
+						<span class="main-feature">Free</span>
+					</div>
+				</div>
+				<div class="col-md-6 order-md-1 features-col features-col--text">
+					<h1>New Features</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolor iste beatae ad adipisci, 
+						fugiat dignissimos pariatur, dolore nemo suscipit cum nisi earum voluptates nulla! 
+					</p>
+					<div class="features-sm">
+						<span class="sm-circle">
+							<a href="#"><i class="bi bi-facebook"></i></a>
+						</span>
+						<span class="sm-circle">
+							<a href="#"><i class="bi bi-instagram"></i></a>
+						</span>
+						<span class="sm-circle">
+							<a href="#"><i class="bi bi-twitter"></i></a>
+						</span>
+						<span class="sm-circle">
+							<a href="#"><i class="bi bi-emoji-sunglasses"></i></a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="app-reviews">
+		<div class="container">
+			<h1>What people are saying</h1>
+			<small>Reviews</small>
+			<div class="row">
+				<div class="col-md-6 review-col">
+					<div class="review-wrapper">
+						<img class="float-start" src="./img/quotes-1.jpg" alt="Review quote">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis similique quasi.</p>
+						<small>John Doe</small>
+						<img class="float-end" src="./img/quotes-2.jpg" alt="Review quote">
+					</div>
+				</div>
+				<div class="col-md-6 review-col">
+					<div class="review-wrapper">
+						<img class="float-start" src="./img/quotes-1.jpg" alt="Review quote">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolor iste beatae ad adipisci, fugiat dignissimos pariatur, dolore nemo suscipit cum nisi earum voluptates nulla! </p>
+						<small>John Doe</small>
+						<img class="float-end" src="./img/quotes-2.jpg" alt="Review quote">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="cta-wrapper">
+		<div class="cta-overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="cta-inner">
+							<h1>How to reach us</h1>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque suscipit, similique animi saepe, ipsam itaque, tempore minus maxime pariatur error unde fugit tenetur.</p>
+							<button type="button" class="btn btn-primary">Primary</button>
+							<button type="button" class="btn btn-secondary">Secondary</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="app-footer">
+		<div class="container">
+			<div class="row border-bottom pb-3 mb-3">
+				<div class="col-md-12 col-lg-2">
+					<a class="navbar-brand" href="#">My App</a>
+				</div>
+				<div class="col-md-12 col-lg-8">
+					<ul class="nav justify-content-center ">
+						<li class="nav-item"><a href="#" class="nav-link px-2">Home</a></li>
+						<li class="nav-item"><a href="#" class="nav-link px-2">Features</a></li>
+						<li class="nav-item"><a href="#" class="nav-link px-2">Reviews</a></li>
+						<li class="nav-item"><a href="#" class="nav-link px-2">FAQs</a></li>
+						<li class="nav-item"><a href="#" class="nav-link px-2">Download</a></li>
+					</ul>
+				</div>
+				<div class="col-md-12 col-lg-2">
+					<div class="social-media-footer">
+						<a href="https://www.facebook.com/fh5co"><i class="bi bi-facebook"></i></a>
+						<a href="https://freehtml5.co"><i class="bi bi-instagram"></i></a>
+						<a href="https://www.twitter.com/fh5co"><i class="bi bi-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="text-center">© 2023</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</footer>
+
+	<!-- Scripts Used -->
+	<!-- Bootstrap -->
+	<script src="./js/jquery-3.2.1.slim.min.js"></script>
+	<!-- <script src="./js/popper.min.js"></script> -->
+	<!-- <script src="./js/bootstrap.min.js"></script> -->
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<!-- Slider scripts -->
+	<!-- <script src="./js/jquery-migrate-1.2.1.min.js"></script> -->
+	<script src="./js/slick/slick.min.js"></script>
+	<script src="./js/main.js"></script>
 </body>
+
 </html>
