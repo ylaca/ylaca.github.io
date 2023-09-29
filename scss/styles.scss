@@ -34,6 +34,9 @@ $primary-blue: #648cff;
 $accent-blue: #234197;
 $grey-silver: #c7c7c7;
 $grey-cod: #111111;
+$grey-gallery: #ececec;
+$grey-martinique: #2e3149;
+$grey-suit: #b5b5c8;
 $yellow-new: #fcec64;
 
 .hamburger-menu {
@@ -65,7 +68,6 @@ $yellow-new: #fcec64;
 // Hamburger menu end
 .app-nav {
 	background-color: $primary-blue;
-	border-bottom: 2px solid $white-alabaster;
 
 	// Links
 	a {
@@ -84,12 +86,6 @@ $yellow-new: #fcec64;
 		&:focus {
 			color: $accent-blue;
 		}
-
-		// &:active {
-		// 	color: $white;
-		// 	border-bottom: 2px solid $white;
-		// 	border-radius: 10px;
-		// }
 	}
 
 	// Hamburger menu container
@@ -127,6 +123,8 @@ $yellow-new: #fcec64;
 	}
 
 	@media (max-width: 992px) {
+		border-bottom: 2px solid $white-alabaster;
+
 		a {
 			&.nav-link {
 				margin: 0;
@@ -384,6 +382,29 @@ $yellow-new: #fcec64;
 	.slider-wrapper {
 		margin: 50px 0;
 
+		.slick-prev, 
+		.slick-next {
+			width: 50px;
+			height: 50px;
+			overflow: hidden;
+		}
+
+		.slick-prev:before, 
+		.slick-next:before {
+			font-family: "bootstrap-icons";
+			font-size: 50px;
+			font-weight: 700;
+  		color: $grey-gallery;
+		}
+
+		.slick-prev:before {
+			content: '\F284';
+		}
+
+		.slick-next:before {
+			content: '\F285';
+		}
+
 		.app-slide {
 			display: flex;
 			flex-direction: column;
@@ -407,6 +428,28 @@ $yellow-new: #fcec64;
 			}
 		}
 	}
+
+	@media (max-width: 576px) {
+		.slider-wrapper {
+			.slick-prev, 
+			.slick-next {
+				width: 30px;
+			}
+
+			button.slick-prev {
+				left: -10px;
+			}
+
+			button.slick-next {
+				right: -10px;
+			}
+
+			.slick-prev:before, 
+			.slick-next:before {
+				font-size: 30px;
+			}
+		}
+	}
 }
 
 /* --- Features Section ------------------------------ ------------------------------ */
@@ -415,6 +458,7 @@ $yellow-new: #fcec64;
   background-position: 0px 0px;
   background-size: contain;
 	padding-top: 100px;
+	overflow-x: hidden;
 
 	.features-row {
 		margin-bottom: 48px;
@@ -598,74 +642,142 @@ $yellow-new: #fcec64;
 	}
 }
 
-/* --- Form Section ------------------------------ ------------------------------ */
-.app-form {
+/* --- CTA section ------------------------------ ------------------------------ */
+.cta-wrapper {
 	width: 100%;
-  background: url(../img/download-section-bg.jpg) no-repeat top;
+  background: #7196FE url(../img/download-section-bg.jpg) no-repeat top;
   overflow-x: hidden;
 
-	.form-overlay {
+	.cta-overlay {
 		background: rgba(0, 0, 0, 0.6);
 
 		.container {
 			padding-top: 64px;
 			padding-bottom: 64px;
+
+			.cta-inner {
+				text-align: center;
+				color: $white;
+
+				h1 {
+					font-size: 30px;
+					text-transform: uppercase;
+					margin-bottom: 30px;
+				}
+			}
 		}
 
-		.main-form {
-			.form-row {
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				justify-content: flex-start;
-				margin-bottom: 16px;
+		.btn {
+			border: none;
+			padding: 10px 15px;
 
-				label {
-					color: $white;
-					margin-bottom: 8px;
+			&-primary {
+				background-color: $white-alabaster;
+				color: $accent-blue;
+				font-weight: 500;
+	
+				&:hover {
+					background-color: $accent-blue;
+					color: $white-alabaster;
 				}
-
-				.form-control {
-					&:focus {
-						border-color: $accent-blue;
-						box-shadow: 0 0 0 0.25rem rgba($primary-blue, 0.25);
-					}
-				}
-
-				.btn-primary {
-					margin: auto;
-					border: none;
-					padding: 10px 15px;
+			}
+	
+			&-secondary {
+				background-color: $accent-blue;
+				color: $white-alabaster;
+				margin-left: 10px;
+	
+				&:hover {
 					background-color: $white-alabaster;
 					color: $accent-blue;
-					font-weight: 500;
-
-					&:hover {
-						background-color: $accent-blue;
-						color: $white-alabaster;
-					}
 				}
 			}
 		}
 	}
 
 	@media (min-width: 768px) {
-		min-height: 576px;
-
-		.form-overlay {
+		.cta-overlay {
 			background-color: transparent;
 
 			.container {
 				padding-top: 192px;
+
+				.cta-inner {
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+/* --- Footer section ------------------------------ ------------------------------ */
+.app-footer {
+	color: $white-alabaster;
+	background-color: $grey-martinique;
+	padding: 50px 0;
+
+	.row {
+		.col-md-12 {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	// Links
+	a {
+		color: $grey-suit;
+
+		&.navbar-brand {
+			font-size: 38px;
+			font-weight: 500;
+			margin-bottom: 32px;
+		}
+
+		&.nav-link {
+			margin: 0 10px;
+		}
+
+		&:hover,
+		&:focus {
+			color: $white;
+		}
+	}
+
+	.nav {
+		margin-bottom: 32px;
+	}
+
+	.social-media-footer {
+		margin-bottom: 32px;
+
+		a {
+			padding: 8px;
+  		margin: 8px;
+
+			i {
+				font-size: 20px;
 			}
 		}
 	}
 
-	@media (min-width: 1200px) {
-		.form-overlay {
-			.main-form {
-				width: 75%;
-				margin: auto;
+	@media (min-width: 992px) {
+		a {
+			&.navbar-brand {
+				margin-bottom: 0;
+			}
+		}
+
+		.nav {
+			margin-bottom: 0;
+		}
+
+		.social-media-footer {
+			margin-bottom: 0;
+
+			a {
+				padding: 4px;
+				margin: 4px;
 			}
 		}
 	}
